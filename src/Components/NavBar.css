@@ -1,0 +1,20 @@
+.navbar {
+    background: linear-gradient(to right, rgb(252, 103, 58), purple);
+  }
+.navbar-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-left: 20px; /* This will push the logo to the left and the options to the right */
+  }
+
+.options{
+    position: relative;
+    left: 50%;
+    margin-right: 30px;
+}
+.options h2{
+    font-weight: 400;
+}
