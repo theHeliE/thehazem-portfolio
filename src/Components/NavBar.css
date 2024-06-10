@@ -1,7 +1,32 @@
-.navbar {
+
+/* .navbar {
     background: linear-gradient(to right, rgb(252, 103, 58), purple);
+  } */
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
-.navbar-container {
+  
+  .navbar {
+    background: linear-gradient(90deg, #5D26C1, #a17fe0, #59C173);
+    background-size: 800% 800%;
+    animation: gradient 15s ease infinite;
+    width: 100%;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: inherit; /* Inherits the text color from the parent element */
+  }
+
+.navbar-container { 
     display: flex;
     align-items: center;
   }
@@ -9,12 +34,74 @@
   .logo {
     margin-left: 20px; /* This will push the logo to the left and the options to the right */
   }
+  
 
 .options{
     position: relative;
-    left: 50%;
+    left: 60%;
     margin-right: 30px;
 }
 .options h2{
     font-weight: 400;
+}
+
+@media (max-width: 1024px){
+    .navbar-container{
+        width: 100%;
+    }
+    .navbar{
+        height: 70%;
+    }
+    .options{
+        position: relative;
+        left: 45%;
+        font-size: 11px;
+        font-weight: 400;
+        margin-right: 30px;
+    }
+    .logo{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px){
+    .navbar-container{
+        width: 100%;
+    }
+    .navbar{
+        height: 70%;
+    }
+    .options{
+        position: relative;
+        left: 30%;
+        font-size: 11px;
+        font-weight: 400;
+        margin-right: 15px;
+    }
+    .logo{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 425px) {
+    .navbar-container{
+        width: 100%;
+    }
+    .navbar{
+        height: 70%;
+    }
+    .options{
+        position: relative;
+        left: 7%;
+        font-size: 11px;
+        font-weight: 400;
+        margin-right: 8px;
+    }
+    .logo{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    
 }

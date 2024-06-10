@@ -1,28 +1,42 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import _ from "lodash";
 import "./NavBar.css";
+
 function NavBar() {
   return (
     <>
       <div className="navbar">
         <nav className="navbar-container">
           <div className="logo">
-            <h2>theHazem</h2>
+            <Link to="/">
+              <h2 className="title hover-animation">theHazem</h2>
+            </Link>
           </div>
           <div className="options">
-            <h2>About me</h2>
+            <Link to="about">
+              <h2>About me</h2>
+            </Link>
           </div>
           <div className="options">
-            <h2>Blogs</h2>
+            <Link to="blog">
+              <h2>Blog</h2>
+            </Link>
           </div>
           <div className="options">
-            <h2>Projects</h2>
+            <Link to="projects">
+              <h2>Projects</h2>
+            </Link>
           </div>
           <div className="options">
-            <h2>Contact me</h2>
+            <Link to="contact">
+              <h2>Contact</h2>
+            </Link>
           </div>
         </nav>
       </div>
     </>
   );
 }
+
 export default NavBar;
