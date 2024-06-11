@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Numans';
+    src:url('Numans.ttf.woff') format('woff'),
+        url('Numans.ttf.svg#Numans') format('svg'),
+        url('Numans.ttf.eot'),
+        url('Numans.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}

@@ -2,17 +2,13 @@ import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import _ from "lodash";
 import "./NavBar.css";
+import "../Assets/tungsten/stylesheet.css";
 
 function NavBar() {
   return (
     <>
       <div className="navbar">
         <nav className="navbar-container">
-          <div className="logo">
-            <Link to="/">
-              <h2 className="title hover-animation">theHazem</h2>
-            </Link>
-          </div>
           <div className="options">
             <Link to="about">
               <h2>About me</h2>
@@ -21,6 +17,11 @@ function NavBar() {
           <div className="options">
             <Link to="blog">
               <h2>Blog</h2>
+            </Link>
+          </div>
+          <div className="logo">
+            <Link to="/">
+              <h2 className="title">TheHazem</h2>
             </Link>
           </div>
           <div className="options">

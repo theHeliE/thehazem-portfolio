@@ -1,0 +1,384 @@
+@font-face {
+    font-family: 'Tungsten Compressed Semi';
+    src: url('TungstenCompressed-SemiBold.eot');
+    src: local('Tungsten Compressed SemiBold'), local('TungstenCompressed-SemiBold'),
+        url('TungstenCompressed-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('TungstenCompressed-SemiBold.woff2') format('woff2'),
+        url('TungstenCompressed-SemiBold.woff') format('woff'),
+        url('TungstenCompressed-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Compressed';
+    src: url('TungstenCompressed-Light.eot');
+    src: local('Tungsten Compressed Light'), local('TungstenCompressed-Light'),
+        url('TungstenCompressed-Light.eot?#iefix') format('embedded-opentype'),
+        url('TungstenCompressed-Light.woff2') format('woff2'),
+        url('TungstenCompressed-Light.woff') format('woff'),
+        url('TungstenCompressed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Compressed';
+    src: url('TungstenCompressed-Thin.eot');
+    src: local('Tungsten Compressed Thin'), local('TungstenCompressed-Thin'),
+        url('TungstenCompressed-Thin.eot?#iefix') format('embedded-opentype'),
+        url('TungstenCompressed-Thin.woff2') format('woff2'),
+        url('TungstenCompressed-Thin.woff') format('woff'),
+        url('TungstenCompressed-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Narrow';
+    src: url('TungstenNarrow-SemiBold.eot');
+    src: local('Tungsten Narrow SemiBold'), local('TungstenNarrow-SemiBold'),
+        url('TungstenNarrow-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('TungstenNarrow-SemiBold.woff2') format('woff2'),
+        url('TungstenNarrow-SemiBold.woff') format('woff'),
+        url('TungstenNarrow-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Narrow';
+    src: url('TungstenNarrow-Light.eot');
+    src: local('Tungsten Narrow Light'), local('TungstenNarrow-Light'),
+        url('TungstenNarrow-Light.eot?#iefix') format('embedded-opentype'),
+        url('TungstenNarrow-Light.woff2') format('woff2'),
+        url('TungstenNarrow-Light.woff') format('woff'),
+        url('TungstenNarrow-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Compressed XLight';
+    src: url('TungstenCompressed-ExtraLight.eot');
+    src: local('Tungsten Compressed ExtraLight'), local('TungstenCompressed-ExtraLight'),
+        url('TungstenCompressed-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('TungstenCompressed-ExtraLight.woff2') format('woff2'),
+        url('TungstenCompressed-ExtraLight.woff') format('woff'),
+        url('TungstenCompressed-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Compressed Book';
+    src: url('TungstenCompressed-Book.eot');
+    src: local('Tungsten Compressed Book'), local('TungstenCompressed-Book'),
+        url('TungstenCompressed-Book.eot?#iefix') format('embedded-opentype'),
+        url('TungstenCompressed-Book.woff2') format('woff2'),
+        url('TungstenCompressed-Book.woff') format('woff'),
+        url('TungstenCompressed-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Condensed Book';
+    src: url('TungstenCondensed-Book.eot');
+    src: local('Tungsten Condensed Book'), local('TungstenCondensed-Book'),
+        url('TungstenCondensed-Book.eot?#iefix') format('embedded-opentype'),
+        url('TungstenCondensed-Book.woff2') format('woff2'),
+        url('TungstenCondensed-Book.woff') format('woff'),
+        url('TungstenCondensed-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Narrow Book';
+    src: url('TungstenNarrow-Book.eot');
+    src: local('Tungsten Narrow Book'), local('TungstenNarrow-Book'),
+        url('TungstenNarrow-Book.eot?#iefix') format('embedded-opentype'),
+        url('TungstenNarrow-Book.woff2') format('woff2'),
+        url('TungstenNarrow-Book.woff') format('woff'),
+        url('TungstenNarrow-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten';
+    src: url('Tungsten-Thin.eot');
+    src: local('Tungsten Thin'), local('Tungsten-Thin'),
+        url('Tungsten-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Tungsten-Thin.woff2') format('woff2'),
+        url('Tungsten-Thin.woff') format('woff'),
+        url('Tungsten-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Narrow';
+    src: url('TungstenNarrow-Thin.eot');
+    src: local('Tungsten Narrow Thin'), local('TungstenNarrow-Thin'),
+        url('TungstenNarrow-Thin.eot?#iefix') format('embedded-opentype'),
+        url('TungstenNarrow-Thin.woff2') format('woff2'),
+        url('TungstenNarrow-Thin.woff') format('woff'),
+        url('TungstenNarrow-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten XLight';
+    src: url('Tungsten-ExtraLight.eot');
+    src: local('Tungsten ExtraLight'), local('Tungsten-ExtraLight'),
+        url('Tungsten-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Tungsten-ExtraLight.woff2') format('woff2'),
+        url('Tungsten-ExtraLight.woff') format('woff'),
+        url('Tungsten-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Condensed';
+    src: url('TungstenCondensed-Bold.eot');
+    src: local('Tungsten Condensed Bold'), local('TungstenCondensed-Bold'),
+        url('TungstenCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TungstenCondensed-Bold.woff2') format('woff2'),
+        url('TungstenCondensed-Bold.woff') format('woff'),
+        url('TungstenCondensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Condensed';
+    src: url('TungstenCondensed-Black.eot');
+    src: local('Tungsten Condensed Black'), local('TungstenCondensed-Black'),
+        url('TungstenCondensed-Black.eot?#iefix') format('embedded-opentype'),
+        url('TungstenCondensed-Black.woff2') format('woff2'),
+        url('TungstenCondensed-Black.woff') format('woff'),
+        url('TungstenCondensed-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Compressed';
+    src: url('TungstenCompressed-Medium.eot');
+    src: local('Tungsten Compressed Medium'), local('TungstenCompressed-Medium'),
+        url('TungstenCompressed-Medium.eot?#iefix') format('embedded-opentype'),
+        url('TungstenCompressed-Medium.woff2') format('woff2'),
+        url('TungstenCompressed-Medium.woff') format('woff'),
+        url('TungstenCompressed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Narrow';
+    src: url('TungstenNarrow-Medium.eot');
+    src: local('Tungsten Narrow Medium'), local('TungstenNarrow-Medium'),
+        url('TungstenNarrow-Medium.eot?#iefix') format('embedded-opentype'),
+        url('TungstenNarrow-Medium.woff2') format('woff2'),
+        url('TungstenNarrow-Medium.woff') format('woff'),
+        url('TungstenNarrow-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Condensed XLight';
+    src: url('TungstenCondensed-ExtraLight.eot');
+    src: local('Tungsten Condensed ExtraLight'), local('TungstenCondensed-ExtraLight'),
+        url('TungstenCondensed-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('TungstenCondensed-ExtraLight.woff2') format('woff2'),
+        url('TungstenCondensed-ExtraLight.woff') format('woff'),
+        url('TungstenCondensed-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Condensed';
+    src: url('TungstenCondensed-Light.eot');
+    src: local('Tungsten Condensed Light'), local('TungstenCondensed-Light'),
+        url('TungstenCondensed-Light.eot?#iefix') format('embedded-opentype'),
+        url('TungstenCondensed-Light.woff2') format('woff2'),
+        url('TungstenCondensed-Light.woff') format('woff'),
+        url('TungstenCondensed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten';
+    src: url('Tungsten-Medium.eot');
+    src: local('Tungsten Medium'), local('Tungsten-Medium'),
+        url('Tungsten-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Tungsten-Medium.woff2') format('woff2'),
+        url('Tungsten-Medium.woff') format('woff'),
+        url('Tungsten-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Book';
+    src: url('Tungsten-Book.eot');
+    src: local('Tungsten Book'), local('Tungsten-Book'),
+        url('Tungsten-Book.eot?#iefix') format('embedded-opentype'),
+        url('Tungsten-Book.woff2') format('woff2'),
+        url('Tungsten-Book.woff') format('woff'),
+        url('Tungsten-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Condensed';
+    src: url('TungstenCondensed-Medium.eot');
+    src: local('Tungsten Condensed Medium'), local('TungstenCondensed-Medium'),
+        url('TungstenCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+        url('TungstenCondensed-Medium.woff2') format('woff2'),
+        url('TungstenCondensed-Medium.woff') format('woff'),
+        url('TungstenCondensed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten';
+    src: url('Tungsten-Light.eot');
+    src: local('Tungsten Light'), local('Tungsten-Light'),
+        url('Tungsten-Light.eot?#iefix') format('embedded-opentype'),
+        url('Tungsten-Light.woff2') format('woff2'),
+        url('Tungsten-Light.woff') format('woff'),
+        url('Tungsten-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Narrow';
+    src: url('TungstenNarrow-Bold.eot');
+    src: local('Tungsten Narrow Bold'), local('TungstenNarrow-Bold'),
+        url('TungstenNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TungstenNarrow-Bold.woff2') format('woff2'),
+        url('TungstenNarrow-Bold.woff') format('woff'),
+        url('TungstenNarrow-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Compressed';
+    src: url('TungstenCompressed-Black.eot');
+    src: local('Tungsten Compressed Black'), local('TungstenCompressed-Black'),
+        url('TungstenCompressed-Black.eot?#iefix') format('embedded-opentype'),
+        url('TungstenCompressed-Black.woff2') format('woff2'),
+        url('TungstenCompressed-Black.woff') format('woff'),
+        url('TungstenCompressed-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Condensed';
+    src: url('TungstenCondensed-SemiBold.eot');
+    src: local('Tungsten Condensed SemiBold'), local('TungstenCondensed-SemiBold'),
+        url('TungstenCondensed-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('TungstenCondensed-SemiBold.woff2') format('woff2'),
+        url('TungstenCondensed-SemiBold.woff') format('woff'),
+        url('TungstenCondensed-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Compressed';
+    src: url('TungstenCompressed-Bold.eot');
+    src: local('Tungsten Compressed Bold'), local('TungstenCompressed-Bold'),
+        url('TungstenCompressed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TungstenCompressed-Bold.woff2') format('woff2'),
+        url('TungstenCompressed-Bold.woff') format('woff'),
+        url('TungstenCompressed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Narrow';
+    src: url('TungstenNarrow-Black.eot');
+    src: local('Tungsten Narrow Black'), local('TungstenNarrow-Black'),
+        url('TungstenNarrow-Black.eot?#iefix') format('embedded-opentype'),
+        url('TungstenNarrow-Black.woff2') format('woff2'),
+        url('TungstenNarrow-Black.woff') format('woff'),
+        url('TungstenNarrow-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten';
+    src: url('Tungsten-Black.eot');
+    src: local('Tungsten Black'), local('Tungsten-Black'),
+        url('Tungsten-Black.eot?#iefix') format('embedded-opentype'),
+        url('Tungsten-Black.woff2') format('woff2'),
+        url('Tungsten-Black.woff') format('woff'),
+        url('Tungsten-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten';
+    src: url('Tungsten-Bold.eot');
+    src: local('Tungsten Bold'), local('Tungsten-Bold'),
+        url('Tungsten-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Tungsten-Bold.woff2') format('woff2'),
+        url('Tungsten-Bold.woff') format('woff'),
+        url('Tungsten-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten';
+    src: url('Tungsten-SemiBold.eot');
+    src: local('Tungsten SemiBold'), local('Tungsten-SemiBold'),
+        url('Tungsten-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Tungsten-SemiBold.woff2') format('woff2'),
+        url('Tungsten-SemiBold.woff') format('woff'),
+        url('Tungsten-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Condensed';
+    src: url('TungstenCondensed-Thin.eot');
+    src: local('Tungsten Condensed Thin'), local('TungstenCondensed-Thin'),
+        url('TungstenCondensed-Thin.eot?#iefix') format('embedded-opentype'),
+        url('TungstenCondensed-Thin.woff2') format('woff2'),
+        url('TungstenCondensed-Thin.woff') format('woff'),
+        url('TungstenCondensed-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten Narrow XLight';
+    src: url('TungstenNarrow-ExtraLight.eot');
+    src: local('Tungsten Narrow ExtraLight'), local('TungstenNarrow-ExtraLight'),
+        url('TungstenNarrow-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('TungstenNarrow-ExtraLight.woff2') format('woff2'),
+        url('TungstenNarrow-ExtraLight.woff') format('woff'),
+        url('TungstenNarrow-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
