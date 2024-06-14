@@ -1,0 +1,88 @@
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .tungsten-text{
+    font-family: 'Tungsten';
+    font-weight: bold;
+    font-style: normal;
+}
+
+.tungsten-medium {
+    font-family: 'Tungsten';
+    font-weight: 500;
+    font-style: normal;
+}
+
+  .val-button{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 30px;
+  }
+  .button-text{
+    padding: 19px 32px;
+    margin:0;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .val-button:hover{
+    background-color: #000000;
+    color: white;
+  }
+
+  .val-button2{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 70, 85);
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 0px;
+  }
+
+  .val-button2:hover{
+    background-color: #000000;
+  }
+
+  @media (max-width: 425px){
+     .button-text{
+        font-size: 15px;
+      }
+  }

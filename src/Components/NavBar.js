@@ -30,7 +30,16 @@ function NavBar() {
             </Link>
           </div>
           <div className="options">
-            <Link to="contact">
+            <Link
+              to="/"
+              onClick={(e) => {
+                e.preventDefault(); // Prevent the default anchor link behavior
+                window.scrollTo({
+                  top: document.body.scrollHeight,
+                  behavior: "smooth",
+                });
+              }}
+            >
               <h2>Contact</h2>
             </Link>
           </div>

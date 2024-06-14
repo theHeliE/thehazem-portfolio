@@ -1,3 +1,9 @@
+.home{
+    position: -webkit-sticky; /* For Safari */
+    position: sticky; /* Primary option */
+    top: 0;
+    z-index: 1000;
+}
 @keyframes gradient {
     0% {
       background-position: 0% 50%;
@@ -20,6 +26,61 @@
     font-weight: 500;
     font-style: normal;
 }
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
 
 .announcements-container {
     display: flex;
@@ -71,15 +132,16 @@
     text-transform: uppercase;
 }
 .paragraph-text{
-    font-size: 30px;
+    font-size: 20px;
+    word-wrap: break-word;
     margin-top: 0;
-    text-transform: uppercase;
     color: rgb(250, 236, 224);
 }
 
+
 .section-1{
     background: linear-gradient(to right, #c12626,#c04f4f,#8a5656, #6b6b6b);
-    height: 50vh;   
+    height: auto;   
 }
 
 .sub-section{
@@ -91,6 +153,11 @@
 .buttons{
     font-size: 30px;
     margin: 0;
+}
+.contact-buttons{
+    margin: 0;
+    font-size: 25px;
+    text-transform: none;
 }
 
 .home-section{
@@ -105,15 +172,38 @@
     height: auto;
 }
 .paragraph-text2{
-    font-size: 30px;
+    font-size: 20px;
+    word-wrap: break-word;
     margin-top: 0;
-    text-transform: uppercase;
     color: rgb(0, 0, 0);
 }
 
 .section-3{
     background: linear-gradient(to right, #c12626,#c04f4f,#8a5656, #6b6b6b);
     height: auto; 
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
+}
+
+.from-left{
+    transform: translateX(-50%);
+    transition: transform 400ms ease-in-out;
+}
+
+.from-right{
+    transform: translateX(50%);
+    transition: transform 400ms ease-in-out;
+}
+
+.from-left.appear, .from-right.appear{
+    transform: translateX(0);
 }
 
 body{
@@ -135,6 +225,7 @@ body{
     }
     .home-section{
         font-size: 80px;
+        width: 100%;
     }
     .section-2 h1{
         width: 90%;
@@ -145,19 +236,21 @@ body{
     }
     .paragraph-text{
         font-size: 25px;
+        word-wrap: normal;
     }
     .paragraph-text2{
         font-size: 25px;
+        word-wrap: normal;
     }
     .buttons{
         font-size: 20px;
         margin: 0;
     }
     .section-1{
-        height: 30vh;   
+        height: auto;   
     }
     .section-2{
-        height: 30vh;   
+        height: auto;   
     }
     .sub-section{
         max-width: 60%;
@@ -178,6 +271,7 @@ body{
     }
     .home-section{
         font-size: 80px;
+        width: 100%;
     }
      
     .subtitle{
@@ -185,16 +279,17 @@ body{
     }
     .paragraph-text{
         font-size: 20px;
+        
     }
     .paragraph-text2{
         font-size: 20px;
     }
     
     .section-1{
-        height: 30vh;   
+        height: auto;   
     }
     .section-2{
-        height: 30vh;   
+        height: auto;   
     }
 
     .section-1 h1{
@@ -207,7 +302,7 @@ body{
     .sub-section{
         flex: 0 1 50%;
         margin-left: 5%;
-        max-width: 60%;
+        max-width: 80%;
     }
     
     .buttons{
@@ -232,13 +327,14 @@ body{
     }
     .home-section{
         font-size: 80px;
+        width: 100%;
     }
     .section-2 h1{
         width: 95%;
     }
      
     .subtitle{
-        font-size: 20px;
+        font-size: 25px;
     }
     .paragraph-text{
         font-size: 20px;
@@ -248,7 +344,7 @@ body{
     }
     
     .section-1{
-        height: 30vh;   
+        height: auto;   
     }
     
     .sub-section{

@@ -7,7 +7,42 @@ import Button from "@material-ui/core/Button";
 import Cards from "../Components/Cards.js";
 import announcements from "../Constants/Announcements.js";
 import { intro } from "../Constants/Blogs.js";
+import projectsIntro from "../Constants/Projects.js";
+import { FaDiscord } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+import ValorantButton from "../Components/ValorantButton.js";
+import ValorantButtonVar2 from "../Components/ValorantButtonVar2.js";
+
 function Home() {
+  const fade = document.querySelectorAll(".fade-in");
+  const slide = document.querySelectorAll(".slide-in");
+
+  const appearOptions = { threshhold: 1, rootMargin: "0px 0px -150px 0px" };
+
+  const scrollAnimation = new IntersectionObserver(function (
+    entries,
+    scrollAnimation
+  ) {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      } else {
+        entry.target.classList.add("appear");
+        scrollAnimation.unobserve(entry.target);
+      }
+    });
+  },
+  appearOptions);
+
+  fade.forEach((fade) => {
+    scrollAnimation.observe(fade);
+  });
+  slide.forEach((slide) => {
+    scrollAnimation.observe(slide);
+  });
+
   return (
     <>
       <div className="home">
@@ -27,7 +62,7 @@ function Home() {
           ))}
         </div>
       </section>
-      <section className="section-1">
+      <section className="section-1 fade-in slide-in from-left">
         <h1
           className="home-title tungsten-text hover-title"
           data-text="TheHazem"
@@ -35,30 +70,27 @@ function Home() {
           TheHazem
         </h1>
         <div className="sub-section">
-          <p className="tungsten-medium paragraph-text">{shortBio}</p>
+          <p className="paragraph-text poppins-regular">{shortBio}</p>
         </div>
-        <Button
-          variant="contained"
-          style={{ color: "black", marginLeft: "5%", marginBottom: "0" }}
-        >
-          <p className="tungsten-medium buttons">READ MORE</p>
-        </Button>
+        <div style={{ marginLeft: "5%" }}>
+          <ValorantButton link="/about" text="READ MORE"></ValorantButton>
+        </div>
       </section>
-      <section className="section-2">
+      <section className="section-2 slide-in from-right">
         <h1 className="home-section tungsten-text" data-text="TheHazem">
           TheHazem Blog
         </h1>
         <div className="sub-section">
-          <p className="tungsten-medium paragraph-text2">{intro}</p>
+          <p className="paragraph-text2 poppins-regular">{intro}</p>
         </div>
-        <Button
-          variant="contained"
-          style={{ color: "black", marginLeft: "5%", marginBottom: "0" }}
-        >
-          <p className="tungsten-medium buttons">CHECK OUT</p>
-        </Button>
+        <div style={{ marginLeft: "5%" }}>
+          <ValorantButtonVar2
+            link="/blog"
+            text="CHECK OUT"
+          ></ValorantButtonVar2>
+        </div>
       </section>
-      <section className="section-3">
+      <section className="section-3 fade-in slide-in from-left">
         <h1
           className="home-title tungsten-text hover-title"
           data-text="TheHazem"
@@ -66,19 +98,73 @@ function Home() {
           Projects
         </h1>
         <div className="sub-section">
-          <p className="tungsten-medium paragraph-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+          <p className="paragraph-text poppins-regular">{projectsIntro}</p>
         </div>
-        <Button
-          variant="contained"
-          style={{ color: "black", marginLeft: "5%", marginBottom: "0" }}
+        <div style={{ marginLeft: "5%" }}>
+          <ValorantButton
+            link="/projects"
+            text="CHECK PROJECTS"
+          ></ValorantButton>
+        </div>
+      </section>
+      <section className="section-4 fade-in slide-in from-right">
+        <h1 className="home-section tungsten-text" data-text="TheHazem">
+          Contact me
+        </h1>
+        <div className="sub-section">
+          <p className="paragraph-text2 poppins-regular">
+            Feel free to contact me here if you have any inquiries and Thank
+            you!❤️
+          </p>
+          <Button
+            onClick={() => (window.location.href = "https://discord.gg/")}
+          >
+            <FaDiscord
+              style={{ width: "30px", height: "30px", marginRight: "6px" }}
+            />
+            <p className="tungsten-medium contact-buttons">thehazem</p>
+          </Button>
+          <Button
+            onClick={() =>
+              (window.location.href =
+                "https://www.linkedin.com/in/hazem-kotb-46b349267/")
+            }
+          >
+            <FaLinkedin
+              style={{ width: "30px", height: "30px", marginRight: "6px" }}
+            />
+            <p className="tungsten-medium contact-buttons">Hazem Kotb </p>
+          </Button>
+
+          <Button
+            onClick={() =>
+              (window.location.href = "https://github.com/theHeliE")
+            }
+          >
+            <FaGithub
+              style={{ width: "30px", height: "30px", marginRight: "6px" }}
+            />
+            <p className="tungsten-medium contact-buttons">theHeliE </p>
+          </Button>
+
+          <Button
+            onClick={() =>
+              (window.location.href =
+                "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkHdQNfqHGGRkjjbXRwPxPZClVBDjgxkkKngqNqkDLfLDmbXPrrXTznCxxlJtwZHJBJRxJ")
+            }
+          >
+            <SiGmail
+              style={{ width: "30px", height: "30px", marginRight: "6px" }}
+            />
+            <p className="tungsten-medium contact-buttons">hazemkotb.72003</p>
+          </Button>
+        </div>
+        <p
+          style={{ marginLeft: "5%", fontSize: "12px" }}
+          className=" poppins-regular"
         >
-          <p className="tungsten-medium buttons">CHECK PROJECTS</p>
-        </Button>
+          Copyright 2024 theHazem. All rights reserved.
+        </p>
       </section>
     </>
   );
