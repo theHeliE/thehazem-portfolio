@@ -194,20 +194,24 @@
 
 .from-left{
     transform: translateX(-50%);
-    transition: transform 400ms ease-in-out;
+    transition: opacity 250ms ease-in-out ,transform 400ms ease-in-out;
+    opacity: 0;
 }
 
 .from-right{
     transform: translateX(50%);
-    transition: transform 400ms ease-in-out;
+    transition: opacity 250ms ease-in-out ,transform 400ms ease-in-out;
+    opacity: 0;
 }
 
 .from-left.appear, .from-right.appear{
     transform: translateX(0);
+    opacity: 1;
 }
 
 body{
     background-color: #fffbe8;
+    overflow-x: hidden;
 }
 
 @media (max-width: 1024px){
@@ -225,7 +229,7 @@ body{
     }
     .home-section{
         font-size: 80px;
-        width: 100%;
+        width: 90%;
     }
     .section-2 h1{
         width: 90%;
@@ -271,7 +275,7 @@ body{
     }
     .home-section{
         font-size: 80px;
-        width: 100%;
+        width: 90%;
     }
      
     .subtitle{
@@ -327,7 +331,7 @@ body{
     }
     .home-section{
         font-size: 80px;
-        width: 100%;
+        width: 90%;
     }
     .section-2 h1{
         width: 95%;

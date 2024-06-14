@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Pages/Home";
+import About from "./Pages/About";
 
 const fname = "Hazem";
 const lname = "Kotb";
@@ -11,8 +12,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* 
         <Route path="about" element={<About />} />
+        {/* 
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" />} /> */}
       </Routes>

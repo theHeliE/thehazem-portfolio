@@ -16,32 +16,43 @@ import ValorantButton from "../Components/ValorantButton.js";
 import ValorantButtonVar2 from "../Components/ValorantButtonVar2.js";
 
 function Home() {
-  const fade = document.querySelectorAll(".fade-in");
-  const slide = document.querySelectorAll(".slide-in");
+  useEffect(() => {
+    const fade = document.querySelectorAll(".fade-in");
+    const slide = document.querySelectorAll(".slide-in");
 
-  const appearOptions = { threshhold: 1, rootMargin: "0px 0px -150px 0px" };
+    const appearOptions = { threshold: 0, rootMargin: "0px 0px -150px 0px" };
 
-  const scrollAnimation = new IntersectionObserver(function (
-    entries,
-    scrollAnimation
-  ) {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) {
-        return;
-      } else {
-        entry.target.classList.add("appear");
-        scrollAnimation.unobserve(entry.target);
-      }
+    const scrollAnimation = new IntersectionObserver(function (
+      entries,
+      scrollAnimation
+    ) {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        } else {
+          entry.target.classList.add("appear");
+          scrollAnimation.unobserve(entry.target);
+        }
+      });
+    },
+    appearOptions);
+
+    fade.forEach((fade) => {
+      scrollAnimation.observe(fade);
     });
-  },
-  appearOptions);
+    slide.forEach((slide) => {
+      scrollAnimation.observe(slide);
+    });
 
-  fade.forEach((fade) => {
-    scrollAnimation.observe(fade);
-  });
-  slide.forEach((slide) => {
-    scrollAnimation.observe(slide);
-  });
+    return () => {
+      fade.forEach((fade) => {
+        scrollAnimation.unobserve(fade);
+      });
+      slide.forEach((slide) => {
+        scrollAnimation.unobserve(slide);
+      });
+    };
+  }, []);
 
   return (
     <>

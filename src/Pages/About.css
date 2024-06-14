@@ -1,0 +1,46 @@
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .about-subsec{
+    display: flex;
+  }
+
+.bio{
+    word-wrap: break-word;
+    width: 40%;
+    margin-left: 5%;
+}
+
+.about-title{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: 5%;
+    background: linear-gradient(90deg, #5D26C1, #a17fe0, #59C173);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 8s ease infinite;
+}
+
+.about-sec-1{
+
+}
+
+@media (max-width: 425px){
+    .about-title{
+        font-size: 40px;
+        width: 90%;
+    }
+    .bio{
+        width: 92%;
+    }
+}
