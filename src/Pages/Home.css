@@ -1,6 +1,6 @@
 .home{
-    position: -webkit-sticky; /* For Safari */
-    position: sticky; /* Primary option */
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
     z-index: 1000;
 }
@@ -151,8 +151,7 @@
 }
 
 .buttons{
-    font-size: 30px;
-    margin: 0;
+    margin: 0 5%;
 }
 .contact-buttons{
     margin: 0;
@@ -213,6 +212,10 @@ body{
     background-color: #fffbe8;
     overflow-x: hidden;
 }
+.copyright{
+    font-size: 12px;
+    margin: 0 5%;
+}
 
 @media (max-width: 1024px){
     .announcements-container {
@@ -247,8 +250,7 @@ body{
         word-wrap: normal;
     }
     .buttons{
-        font-size: 20px;
-        margin: 0;
+        margin: 0 5%;
     }
     .section-1{
         height: auto;   
@@ -310,16 +312,16 @@ body{
     }
     
     .buttons{
-        font-size: 20px;
-        margin: 0;
+        margin: 0 5%;
     }
 }
 
-@media (max-width: 425px) { 
+@media (max-width: 430px) { 
     
     .announcements-container {
         display: block;
         margin-left: 5%;
+        margin-right: 5%;
       }
       
       .announcement {
@@ -328,6 +330,7 @@ body{
     
     .home-title{
         font-size: 80px;
+        width: 80%;
     }
     .home-section{
         font-size: 80px;
@@ -344,22 +347,31 @@ body{
         font-size: 20px;
     }
     .paragraph-text2{
-        font-size: 20px;
+        font-size: 19px;
     }
     
     .section-1{
         height: auto;   
     }
+    .section-4{}
     
     .sub-section{
         flex: 0 1 50%;
         margin-left: 5%;
         margin-right: 5%;
-        max-width: 98%;
+        max-width: 95%;
     }
     
     .buttons{
-        font-size: 20px;
-        margin: 0;
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .from-left{
+        transform: translateX(-50%);
+    }
+    
+    .from-right{
+        transform: translateX(0px);
     }
 }

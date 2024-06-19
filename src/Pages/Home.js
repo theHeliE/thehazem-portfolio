@@ -83,7 +83,7 @@ function Home() {
         <div className="sub-section">
           <p className="paragraph-text poppins-regular">{shortBio}</p>
         </div>
-        <div style={{ marginLeft: "5%" }}>
+        <div className="buttons">
           <ValorantButton link="/about" text="READ MORE"></ValorantButton>
         </div>
       </section>
@@ -94,7 +94,7 @@ function Home() {
         <div className="sub-section">
           <p className="paragraph-text2 poppins-regular">{intro}</p>
         </div>
-        <div style={{ marginLeft: "5%" }}>
+        <div className="buttons">
           <ValorantButtonVar2
             link="/blog"
             text="CHECK OUT"
@@ -102,16 +102,11 @@ function Home() {
         </div>
       </section>
       <section className="section-3 fade-in slide-in from-left">
-        <h1
-          className="home-title tungsten-text hover-title"
-          data-text="TheHazem"
-        >
-          Projects
-        </h1>
+        <h1 className="home-title tungsten-text hover-title">Projects</h1>
         <div className="sub-section">
           <p className="paragraph-text poppins-regular">{projectsIntro}</p>
         </div>
-        <div style={{ marginLeft: "5%" }}>
+        <div className="buttons">
           <ValorantButton
             link="/projects"
             text="CHECK PROJECTS"
@@ -174,10 +169,7 @@ function Home() {
             <p className="tungsten-medium contact-buttons">hazemkotb.72003</p>
           </Button>
         </div>
-        <p
-          style={{ marginLeft: "5%", fontSize: "12px" }}
-          className=" poppins-regular"
-        >
+        <p className="copyright poppins-regular">
           Copyright 2024 theHazem. All rights reserved.
         </p>
       </section>
