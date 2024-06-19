@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import NavBar from "../Components/NavBar";
 import "./Home.css";
 import { shortBio } from "../Constants/Bio.js";
-import Button from "@material-ui/core/Button";
+import Button from "@mui/material/Button";
 import Cards from "../Components/Cards.js";
 import announcements from "../Constants/Announcements.js";
 import { intro } from "../Constants/Blogs.js";
@@ -129,6 +129,7 @@ function Home() {
           </p>
           <Button
             onClick={() => (window.location.href = "https://discord.gg/")}
+            variant=""
           >
             <FaDiscord
               style={{ width: "30px", height: "30px", marginRight: "6px" }}
@@ -140,6 +141,7 @@ function Home() {
               (window.location.href =
                 "https://www.linkedin.com/in/hazem-kotb-46b349267/")
             }
+            variant=""
           >
             <FaLinkedin
               style={{ width: "30px", height: "30px", marginRight: "6px" }}
@@ -151,6 +153,7 @@ function Home() {
             onClick={() =>
               (window.location.href = "https://github.com/theHeliE")
             }
+            variant=""
           >
             <FaGithub
               style={{ width: "30px", height: "30px", marginRight: "6px" }}
@@ -163,6 +166,7 @@ function Home() {
               (window.location.href =
                 "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkHdQNfqHGGRkjjbXRwPxPZClVBDjgxkkKngqNqkDLfLDmbXPrrXTznCxxlJtwZHJBJRxJ")
             }
+            variant=""
           >
             <SiGmail
               style={{ width: "30px", height: "30px", marginRight: "6px" }}
